@@ -9,7 +9,8 @@
     display: flex;
     list-style: none;
    list-style-type: none;
-   padding-left: 46%;
+    justify-content: center;
+   
 }
 
 .social_list li {
