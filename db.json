@@ -250,6 +250,17 @@
       "cost": 0,
       "services": [],
       "id": 27
+    },
+    {
+      "name": "Lucas e Jean",
+      "budget": "3",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 28
     }
   ],
   "categories": [
