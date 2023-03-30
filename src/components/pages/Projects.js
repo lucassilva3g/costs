@@ -2,8 +2,8 @@ import { useLocation } from "react-router-dom";
 import Message from "../layout/Message";
 
 function Project() {
+  const location = useLocation();
 
-const location = useLocation();
 let message = ''
 if (location.state) {
   message = location.state.message;
