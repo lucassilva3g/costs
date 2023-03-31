@@ -11,6 +11,6 @@ function Home() {
       <img src={savings} alt="Costs" />
   </section>
   )
-}	
+}
 
 export default Home;
