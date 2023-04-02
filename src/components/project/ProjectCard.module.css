@@ -2,14 +2,14 @@
 padding: 1em;
 border: 1px solid #7a7a7a;
 border-radius: 5px;
-
-max-width: 0.5%;
+width: 300px;
+margin: 1em;
 }
 
 .project_card h4 {
   background-color: #222;
   color: #ffbb33;
-  padding: .4em;
+  padding: .0em;
   margin-bottom: 1.3em;
   font-size: 1.3em;
 }
