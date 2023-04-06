@@ -10,8 +10,9 @@ function Project() {
   const { id } = useParams();
   const [project, setProject] = useState({});
   const [showProjectForm, setShowProjectForm] = useState(false);
-const [message, setMessage] = useState();
-const [type, setType] = useState();
+  const [showServiceForm, setShowServiceForm] = useState(false);
+  const [message, setMessage] = useState();
+  const [type, setType] = useState();
 
   useEffect(() => {
     setTimeout(() => {
@@ -30,6 +31,8 @@ const [type, setType] = useState();
   }, [id]);
 
   function editPost(project) {
+    setMessage("");
+
     //budget validation
     if (project.budget < project.cost) {
       setMessage("Orçamento não pode ser menor que o custo do projeto!");
@@ -49,7 +52,7 @@ const [type, setType] = useState();
         setProject(data);
         setShowProjectForm(false);
         setMessage("Projeto atualizado!");
-      setType("success");
+        setType("success");
       })
       .catch((err) => console.log(err));
   }
@@ -58,12 +61,16 @@ const [type, setType] = useState();
     setShowProjectForm(!showProjectForm);
   }
 
+  function toggleServiceForm() {
+    setShowServiceForm(!showServiceForm);
+  }
+
   return (
     <>
       {project.name ? (
         <div className={styles.project_details}>
           <Container customClass="column">
-            {message && <Message type= {type} msg={message} />}
+            {message && <Message type={type} msg={message} />}
             <div className={styles.details_container}>
               <h1>{project.name}</h1>
               <button className={styles.btn} onClick={toggleProjectForm}>
@@ -91,6 +98,19 @@ const [type, setType] = useState();
                 </div>
               )}
             </div>
+            <div className={styles.service_form_container}>
+              <h2>Adicione um serviço</h2>
+              <button className={styles.btn} onClick={toggleServiceForm}>
+                {!showServiceForm ? "Adicionar serviço" : "Fechar"}
+              </button>
+              <div className={styles.project_info}>
+                {showServiceForm && <div>Formulário do serviço </div>}
+              </div>
+            </div>
+            <h2>Serviços</h2>
+            <Container customClass='start'>
+              <p>Itens de serviços</p>
+            </Container>
           </Container>
         </div>
       ) : (

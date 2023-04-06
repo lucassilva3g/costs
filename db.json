@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "atualizador",
-      "budget": "30",
+      "budget": "100000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
@@ -98,6 +98,17 @@
       "cost": 0,
       "services": [],
       "id": 9
+    },
+    {
+      "name": "vsf",
+      "budget": "2",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 10
     }
   ],
   "categories": [
