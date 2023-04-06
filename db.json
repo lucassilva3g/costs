@@ -1,14 +1,21 @@
 {
   "projects": [
     {
-      "name": "atualizador",
-      "budget": "100000",
+      "name": "atualizado",
+      "budget": "100",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "1",
+        "name": "Infra"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 100,
+      "services": [
+        {
+          "name": "testeaaa",
+          "cost": "100",
+          "description": "1",
+          "id": "79520d99-584b-4378-bfd5-06ad678b71bf"
+        }
+      ],
       "id": 1
     },
     {
@@ -109,6 +116,16 @@
       "cost": 0,
       "services": [],
       "id": 10
+    },
+    {
+      "cost": 0,
+      "services": [],
+      "id": 11
+    },
+    {
+      "cost": 0,
+      "services": [],
+      "id": 12
     }
   ],
   "categories": [
