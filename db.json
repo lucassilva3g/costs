@@ -16,13 +16,10 @@
           "id": "79520d99-584b-4378-bfd5-06ad678b71bf"
         },
         {
-          "id": "0ae3601c-93b2-4215-9c22-fd46a2fda5ef"
-        },
-        {
-          "id": "0ae3601c-93b2-4215-9c22-fd46a2fda5ef"
-        },
-        {
-          "id": "0ae3601c-93b2-4215-9c22-fd46a2fda5ef"
+          "name": "Lucas Santos  Silva",
+          "cost": "23",
+          "description": "42424",
+          "id": "ed540daa-b421-4553-9455-9d528fb5b2ee"
         }
       ],
       "id": 1
@@ -49,13 +46,16 @@
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": 1,
+      "cost": null,
       "services": [
         {
           "name": "ss",
           "cost": "1",
           "description": "bn",
           "id": "a3d9d018-6b9e-48db-999b-9aa03b1f3d96"
+        },
+        {
+          "id": "9fbce204-177e-4754-95c0-2408d49e3968"
         }
       ],
       "id": 3
@@ -132,97 +132,6 @@
       "cost": 0,
       "services": [],
       "id": 9
-    },
-    {
-      "name": "vsf",
-      "budget": "2",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 10
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 11
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 12
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 13
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 14
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 15
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 16
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 17
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 18
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 19
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 20
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 21
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 22
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 23
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 24
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 25
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 26
     }
   ],
   "categories": [

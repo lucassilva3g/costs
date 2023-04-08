@@ -12,7 +12,7 @@ import ServiceCard from "../Service/ServiceCard";
 
 function Project() {
   const { id } = useParams();
-  const [project, setProject] = useState({service: []});
+  const [project, setProject] = useState({ service: [] });
   const [services, setServices] = useState([]);
   const [showProjectForm, setShowProjectForm] = useState(false);
   const [showServiceForm, setShowServiceForm] = useState(false);
@@ -72,7 +72,6 @@ function Project() {
     const lastServiceCost = lastService.cost;
 
     const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost);
-   console.log (newCost)
     //maximun budget validation
     if (newCost > parseFloat(project.budget)) {
       setMessage("Orçamento ultrapassado, verifique o valor do serviço");
@@ -86,19 +85,18 @@ function Project() {
 
     //update project
     fetch(`http://localhost:5000/projects/${project.id}`, {
-     method: "PATCH",
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(project)
-    }).then((resp) => resp.json())
-    .then((data) => {
-      //exibir o serviço
-      setShowServiceForm(false);
+      body: JSON.stringify(project),
     })
-    .catch(err => console.log(err))
-
-
+      .then((resp) => resp.json())
+      .then((data) => {
+        //exibir o serviço
+        setShowServiceForm(false);
+      })
+      .catch((err) => console.log(err));
   }
 
   function removeService() {}
@@ -110,6 +108,7 @@ function Project() {
   function toggleServiceForm() {
     setShowServiceForm(!showServiceForm);
   }
+
 
   return (
     <>
@@ -161,23 +160,21 @@ function Project() {
             </div>
             <h2>Serviços</h2>
             <Container customClass="start">
-              {services.length > 0 &&
+
+              {services.length > 0 ? (
                 services.map((service) => (
-                 <ServiceCard
-                  id={service.id}
-                  name={service.name}
-                  cost={service.cost}
-                  description={service.description}
-                  key={service.id}
-                  handleRemove={removeService}
+                  <ServiceCard
+                    id={service.id}
+                    name={service.name ?? "Sem nome"}
+                    cost={service.cost ?? "Sem custo"}
+                    description={service.description ?? "Sem descrição"}
+                    key={service.id}
+                    handleRemove={removeService}
                   />
-
                 ))
-
-
-
-              }
-              {services.length === 0 && <p>Não há serviços cadastrados.</p>}
+              ) : (
+                <p>Não há serviços cadastrados.</p>
+              )}
             </Container>
           </Container>
         </div>
