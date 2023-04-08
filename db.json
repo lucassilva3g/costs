@@ -7,21 +7,8 @@
         "id": "1",
         "name": "Infra"
       },
-      "cost": null,
-      "services": [
-        {
-          "name": "testeaaa",
-          "cost": "100",
-          "description": "1",
-          "id": "79520d99-584b-4378-bfd5-06ad678b71bf"
-        },
-        {
-          "name": "Lucas Santos  Silva",
-          "cost": "23",
-          "description": "42424",
-          "id": "ed540daa-b421-4553-9455-9d528fb5b2ee"
-        }
-      ],
+      "cost": 0,
+      "services": [],
       "id": 1
     },
     {
@@ -132,6 +119,16 @@
       "cost": 0,
       "services": [],
       "id": 9
+    },
+    {
+      "cost": 0,
+      "services": [],
+      "id": 10
+    },
+    {
+      "cost": 0,
+      "services": [],
+      "id": 11
     }
   ],
   "categories": [
