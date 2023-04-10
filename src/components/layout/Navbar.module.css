@@ -6,7 +6,7 @@
 }
 
 .list {
-    display: flex; 
+    display: flex;
     list-style: none;
     align-items: center;
 }
@@ -18,8 +18,28 @@
 .item a {
     color: #fff;
      text-decoration: none; /*para tirar o sublinhado */
+
 }
 
 .item a:hover {
     color: #ffbb33;
+}
+
+
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .list {
+padding: 0 100px;
+margin-left: 0em;
+    }
+
+    .item {
+        margin-left: 50px;
+    }
+
+
 }
